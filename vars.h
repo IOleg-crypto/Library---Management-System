@@ -5,4 +5,5 @@
 
 char checker;
 char add_more;
+int number_books;
 #endif
