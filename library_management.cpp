@@ -14,7 +14,7 @@ void Book::addBook()
 
 void Book::PrintBook(Book *p)
 {
-    Book *book = &*p;
+    Book *book_loop = &*p;
 
     std::cout << "The name of the book is : " << p->name << std::endl;
     std::cout << "The name of the author is : " << p->author << std::endl;
@@ -34,7 +34,7 @@ void Book::PrintBook(Book *p)
             addBook();
             std::cout << '\n'
                       << std::endl;
-            PrintBook(book);
+            PrintBook(book_loop);
         }
 
         break;
