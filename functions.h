@@ -10,8 +10,12 @@ public:
     std::string author;
     int shelf = 0;
 
-    void addBook();
-    void PrintBook(Book *p);
+    void setBook();
+    void SetAuthor();
+    void SetShelf();
+    void getAuthor();
+    void getShelf();
+    void getBook();
+    void PrintBook();
 };
-
 #endif
