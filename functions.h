@@ -8,6 +8,9 @@ class Book
 public:
     std::string name;
     std::string author;
+
+    // special strings
+    std::istringstream ss;
     int shelf = 0;
 
     void setBook();

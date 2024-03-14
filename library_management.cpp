@@ -19,10 +19,10 @@ void operator delete(void *ptr)
 
 void Book::SetAuthor()
 {
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\t');
     std::cout << "Enter the name of the author : ";
-    std::getline(std::cin, author);
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::getline(std::cin, author); // need to fix std::cin moment
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\t');
     std::cout << std::endl;
 }
 void Book::getAuthor()

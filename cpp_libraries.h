@@ -5,5 +5,6 @@
 #include <string>
 #include <memory>
 #include <limits>
+#include <sstream>
 
 #endif
