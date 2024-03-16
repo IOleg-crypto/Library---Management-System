@@ -19,7 +19,7 @@ void operator delete(void *ptr)
 
 void Book::SetAuthor()
 {
-    std::cout << "Enter the name of the author : ";
+    std::cout << "Enter the name of the author(write without spaces\ttabulation) : ";
     std::getline(std::cin >> std::ws, author);
     std::cout << std::endl;
 }

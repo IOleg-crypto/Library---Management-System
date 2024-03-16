@@ -8,6 +8,7 @@ class Book
 public:
     std::string name;
     std::string author;
+    const char *str;
     int shelf = 0;
 
     void setBook();

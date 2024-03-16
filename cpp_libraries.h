@@ -7,5 +7,8 @@
 #include <memory>
 #include <limits>
 #include <sstream>
+#include <iomanip>
+#include <istream>
+#include <sstream>
 
 #endif
