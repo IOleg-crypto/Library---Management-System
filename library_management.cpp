@@ -19,10 +19,8 @@ void operator delete(void *ptr)
 
 void Book::SetAuthor()
 {
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\t');
     std::cout << "Enter the name of the author : ";
-    std::getline(std::cin, author); // need to fix std::cin moment
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\t');
+    std::getline(std::cin >> std::ws, author);
     std::cout << std::endl;
 }
 void Book::getAuthor()
@@ -67,18 +65,16 @@ void Book::PrintBook()
             setBook();
             SetShelf();
             SetAuthor();
-            getBook();
-            getAuthor();
-            getShelf();
             PrintBook();
             std::cout << std::endl;
         }
+        getBook();
+        getAuthor();
+        getShelf();
         break;
     case 'n':
         std::cout << "See you next time! Goodbye";
         exit(0);
-        break;
-    default:
         break;
     }
 }
